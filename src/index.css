@@ -395,7 +395,7 @@ h2 {
   font-size: 0.85rem;
 }
 
-.preco-original + .preco {
+.preco-original+.preco {
   color: var(--cor-destaque);
 }
 
@@ -553,11 +553,59 @@ h2 {
   margin: 0;
 }
 
+.aviso-esgotado {
+  display: grid;
+  gap: var(--espaco-3);
+  padding: var(--espaco-4);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  background: var(--cor-superficie);
+}
+
+.aviso-esgotado label {
+  display: grid;
+  gap: var(--espaco-1);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.aviso-esgotado input {
+  width: 100%;
+  padding: var(--espaco-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+  background: var(--cor-fundo);
+}
+
+.aviso-esgotado-titulo {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-destaque);
+}
+
+.mensagem-espera {
+  margin: 0;
+  color: var(--cor-frete);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
 .detalhe-preco {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0;
+}
+
+.detalhe-frete,
+.frete-restante {
+  margin: 0;
+  color: var(--cor-frete);
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .detalhe-descricao {
@@ -622,7 +670,7 @@ h2 {
   padding: var(--espaco-4);
 }
 
-.item-carrinho + .item-carrinho {
+.item-carrinho+.item-carrinho {
   border-top: 1px solid var(--cor-borda);
 }
 
